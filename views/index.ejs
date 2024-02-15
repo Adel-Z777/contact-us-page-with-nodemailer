@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <small>Enter message (optional) and click button "Send"</small>
+  <form action="/send_email" method="post">
+    <div class="wrapper centered">
+      <article class="letter">
+        <div class="side">
+          <h1>Contact us</h1>
+          <p>
+            <textarea name="text" id="text" placeholder="Your message" cols="30" rows="10"></textarea>
+          </p>
+        </div>
+        <div class="side">
+          <p>
+            <input type="email" name="from" id="from" placeholder="Your email">
+          </p>
+          <p>
+            <input type="text" name="subject" id="subject" placeholder="Subject">
+          </p>
+          <p>
+            <button type="submit" value="send" id="sendLetter">send</button>
+          </p>
+        </div>
+      </article>  
+      <div class="envelope front"></div>
+      <div class="envelope back"></div>
+    </div>  
+    <p class="result-message centered">Thank you for your message</p>
+    </form>
+    
+  </div>
+  <script src="/public/JS/script.js"></script>
+</body>
+</html>
